@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                }
+           h1 {
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
+           h2 {
+                font-size: 25px;
+                margin-bottom: 10px;
+            }
+           .nav-list {
+                list-style-type: none;
+                padding: 0;
+            }
+           .nav-item {
+                margin-bottom: 10px;
+            }
+           .nav-link {
+                display: block;
+                padding: 7px;
+                background-color: #f8f8f8;
+                color: #d36464;
+                text-decoration: none;
+                border-radius: 10px;
+                transition: background-color 0.2s ease-in-out;
+            }
+           .nav-link:hover {
+                background-color: #ffffff;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hello Prof! Welcome to our website!</h1>
+        <h2>Group 7</h2>
+        <ul class="nav-list">
+            <li class="nav-item">1.Chhavinder Singh</li>
+            <li class="nav-item">2.Gireeshma Yarradoddi</li>
+            <li class="nav-item">3.Osama Al Daqaq</li>
+        </ul>
+        <h2>Project Description</h2>
+        <p>
+            <strong>Goal:</strong> The project aims to create a basic website for Group 7, which includes an About page detailing the dataset used and a Data page displaying the customer shopping dataset.
+        </p>
+        <p>
+            <strong>Methodology:</strong>
+            <ol>
+                <li><strong>Data Collection:</strong> The dataset was obtained from Kaggle Datasets.</li>
+                <li><strong>Database:</strong> Data is stored in a database for this project.</li>
+                <li><strong>Website Development:</strong> The website is developed using HTML and CSS. Flask routing is used to handle navigation between pages.</li>
+            </ol>
+        </p>
+        <h2>Site Content</h2>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="{{ url_for('about') }}" class="nav-link">About the Dataset</a></li>
+            <li class="nav-item"><a href="{{ url_for('data') }}" class="nav-link">Customer Shopping Dataset</a></li>
+        </ul>
+        <h2>Navigation</h2>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="https://www.kaggle.com/datasets" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="https://stclairconnect.sharepoint.com/sites/jordindian" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="https://www.stclaircollege.ca/programs/data-analytics-business" class="nav-link">Program</a></li>
+            <li class="nav-item"><a href="https://stclairconnect.sharepoint.com/sites/jordindian" class="nav-link">Contact</a></li>
+        </ul>
+    </body>
+</html>

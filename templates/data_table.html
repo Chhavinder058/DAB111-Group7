@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+        
+    </head>
+    <body>
+        <h1>Customer Shopping</h1>
+    <body>
+        <table>
+            <thead>
+                <tr><th>invoice_no
+                </th><th>customer_id
+                </th><th>gender
+                </th><th>age
+                </th><th>category
+                </th><th>quantity
+                </th><th>price
+                </th><th>payment_method
+                </th><th>invoice_date
+                </th><th>shopping_mall
+                </th></tr>
+            </thead>
+            <tbody>
+                {% for s in shopping%}
+            <tr><td>{{ s[0] }}</td><td>{{ s[1] }}</td><td>{{ s[2] }}</td><td>{{ s[3] }}</td><td>{{ s[4] }}</td><td>{{ s[5] }}</td><td>{{ s[6] }}</td><td>{{ s[7] }}</td><td>{{ s[8] }}</td><td>{{ s[9] }}</td></tr>
+                {% endfor %}    
+            </tbody>
+        </table>
+    </body>
+</html>
+
